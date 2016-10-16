@@ -12,14 +12,12 @@ module task1
 
 reg [2:0] count_one = 3'b0;
 reg [2:0] count_zero = 3'b0;
-reg [2:0] count_occurences_one=3'b0;
 reg flag=0;
 
 always_comb
 begin
 count_one = 0;
 count_zero = 0;
-count_occurences_one = 0;
 
  count_zero = CODE[0] ? count_zero : (count_zero + 1'b1); 
  count_zero = CODE[1] ? count_zero : (count_zero + 1'b1); 
@@ -28,26 +26,21 @@ count_occurences_one = 0;
  count_zero = CODE[4] ? count_zero : (count_zero + 1'b1); 
  
  count_one= CODE[0] ? (count_one + 1'b1) : count_one;
- count_occurences_one = CODE[0] ? (count_occurences_one + 1'b1) : 0;
  
  count_one = CODE[1] ? (count_one + 1'b1) : count_one;
- count_occurences_one = CODE[1] ? (count_occurences_one + 1'b1) : 0;
- if(count_occurences_one == 3'd2)  // check if 2 continuous one's occured 
+ if(count_one == 3'd2)  // check if 2 continuous one's occured 
       flag = 1'b1;
       
  count_one = CODE[2] ? (count_one + 1'b1) : count_one;
- count_occurences_one = CODE[2] ? (count_occurences_one + 1'b1) : 0;
-if(count_occurences_one == 3'd2)  // check if 2 continuous one's occured 
+ if(count_one == 3'd2)  // check if 2 continuous one's occured 
      flag = 1'b1;
      
  count_one = CODE[3] ? (count_one + 1'b1) : count_one;
- count_occurences_one = CODE[3] ? (count_occurences_one + 1'b1) : 0;
- if(count_occurences_one == 3'd2)  // check if 2 continuous one's occured 
+ if(count_one == 3'd2)  // check if 2 continuous one's occured 
       flag = 1'b1;
   
  count_one = CODE[4] ? (count_one + 1'b1) : count_one;
- count_occurences_one = CODE[4] ? (count_occurences_one + 1'b1) : 0;
- if(count_occurences_one == 3'd2)  // check if 2 continuous one's occured 
+ if(count_one == 3'd2)  // check if 2 continuous one's occured 
       flag = 1'b1;
   
 if ( (flag == 1'b1) && (count_one == 3'd2 ) && (count_zero ==3'd3 ))
