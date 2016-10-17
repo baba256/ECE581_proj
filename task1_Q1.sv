@@ -2,7 +2,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 // Create Date: 10/15/2016 05:30:24 PM
 // Design Name: Hiral Barot
-// Module Name: task1
+// Module Name: task1_Q1
 // Project Name: Project 1 ECE 581
 // Description: Implementing sequential (always_comb) model of Two-out-of-Five 
 //code word having a delay of 10ns
