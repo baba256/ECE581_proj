@@ -6,17 +6,17 @@
 // Project Name: Project 1 -ECE 581
 // Description: N-bit  comparator  is  used  to  to  determine  
 //whether  two  signals  have  equal  values
-//Reference: Digital System Design with System Verilog Section 4.6 by Mark Zwolinski
+//Reference:Digital System Design with System Verilog Section 4.6 by Mark Zwolinski
 //////////////////////////////////////////////////////////////////////////////////
 module Comparator #(parameter N=3)
-(output logic [N-1:0] eqo,input logic [N-1:0]x,y);
+(output logic eqo,input logic [N-1:0]x,y);
 
 logic eqi;
-
+integer i;
 always_comb
     begin
     eqi=1'b1;
-    for(int i =0;i<N;i++)
+    for(i =0;i<N;i=i+1)
         eqi=~(x[i]^y[i])& eqi;
     eqo=eqi;
     end          
