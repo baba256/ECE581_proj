@@ -1,3 +1,21 @@
+///////////////////////////////////////////////////////////////////
+//TestBench
+/*
+==============================
+Project 1
+ECE 581 - ASIC Design 
+==============================
+ 
+------------------------------------------------------------------
+ Author: Yadnesh Samant
+ Module Name: hw_decoder_tb
+ Date:10/10/2016
+ Description: This is the TestBench for verifying the all three decoder 
+			implementation. [2.2]
+---------------------------------------------------------------------
+ 
+*/
+///////////////////////////////////////////////////////////////////
 module hw_decoder_tb();
 logic clk;
 logic [2:0] s;
