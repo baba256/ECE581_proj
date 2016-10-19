@@ -8,7 +8,7 @@ ECE 581 - ASIC Design
  
 ------------------------------------------------------------------
  Author: Yadnesh Samant
- Module Name: hw_3_8_decoder
+ Module Name: hw_3_8_decoder_cond
  Date:10/10/2016
  Description: This is the design of 3:8 decoder using conditional operators. [2.2]
 ---------------------------------------------------------------------
