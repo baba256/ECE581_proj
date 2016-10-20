@@ -12,11 +12,8 @@ module task1
 
 //wire [2:0] count;
 wire out0,out1,out2,out3,out4;//negation of input 
-
 wire op1,op2,op3,op4,op5,op6,op7,op8,op9,op10,op11;//output for combination of nand gates
-
 wire  a,b,c,d,e,f,g,h,i,j; //not the o/p of nand gates
-
 wire k0,k1,k2,k3,k4,k5,k6,k7,k8,k9,k10; //op for nand gates
 
 not u1(out0,CODE[0]);
