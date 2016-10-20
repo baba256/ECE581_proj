@@ -3,7 +3,7 @@
 // Create Date: 10/15/2016 05:30:24 PM
 // Design Name: Hiral Barot
 // Module Name: Comparator
-// Project Name: Project 1 - Task1 testbench Task1
+// Project Name: Project 1 - Task2.4 testbench
 //////////////////////////////////////////////////////////////////////////////////
 module Comparator;
 
