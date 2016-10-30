@@ -1,3 +1,20 @@
+///////////////////////////////////////////////////////////////////
+//TestBench
+/*
+==============================
+Project 1
+ECE 581 - ASIC Design 
+==============================
+ 
+------------------------------------------------------------------
+ Author: Yadnesh Samant
+ Module Name: hw2_sequence_generator_tb
+ Date:10/26/2016
+ Description: This is the TestBench for Sequence Generator. [D1]
+---------------------------------------------------------------------
+ 
+*/
+///////////////////////////////////////////////////////////////////
 module hw2_sequence_generator_tb();
 logic clk,start,data_out;
 

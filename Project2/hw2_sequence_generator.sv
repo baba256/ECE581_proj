@@ -1,3 +1,20 @@
+///////////////////////////////////////////////////////////////////
+//Design
+/*
+==============================
+Project 2
+ECE 581 - ASIC Design 
+==============================
+ 
+------------------------------------------------------------------
+ Author: Yadnesh Samant
+ Module Name: hw2_sequence_generator
+ Date:10/26/2016
+ Description: This is the design for the Sequence Generator. [D1]
+---------------------------------------------------------------------
+ 
+*/
+///////////////////////////////////////////////////////////////////
 module hw2_sequence_generator(
 						input  logic clk,
 						input  logic start,
