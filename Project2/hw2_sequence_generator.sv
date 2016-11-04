@@ -34,8 +34,10 @@ always_comb
 		data_out = 1'b0;
 	case(state)
 		S0:
-		   if(start)
+		   if(start) begin
 			    nextstate = S1;
+				data_out  = 1'b1;
+		   end
 		   else 
 				nextstate = S0;
 		S1:
@@ -44,8 +46,10 @@ always_comb
 		   else 
 				nextstate = S0;
 		S2:
-		   if(start)
+		   if(start) begin
 			    nextstate = S3;
+				data_out  = 1'b1;
+		   end
 		   else 
 				nextstate = S0;
 		S3:
@@ -54,8 +58,10 @@ always_comb
 		   else 
 				nextstate = S0;
 		S4:
-		   if(start)
+		   if(start) begin
 			    nextstate = S5;
+				data_out  = 1'b1;
+		   end
 		   else 
 				nextstate = S0;
 		S5:
@@ -64,22 +70,13 @@ always_comb
 		   else 
 				nextstate = S0;
 		S6:
-		   if(start)
+		   if(start) begin
 			    nextstate = S7;
+				data_out  = 1'b1;
+		   end
 		   else 
 				nextstate = S0;
 		S7:
-		   begin
-				data_out = 1'b1;
-				if(start)
-					nextstate = S8;
-				else 
-					nextstate = S0;
-		   end
-		S8:
-		   if(start)
-			    nextstate = S7;
-		   else 
 				nextstate = S0;
 		default:
 			nextstate = S0;
