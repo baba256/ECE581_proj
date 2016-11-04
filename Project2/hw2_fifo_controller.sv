@@ -17,7 +17,7 @@ ECE 581 - ASIC Design
 */
 //////////////////////////////////// ///////////////////////////////
 module hw2_fifo_controller(
-			output logic 		wr_en, rd_en, full, emp
+			output logic 		wr_en, rd_en, full, emp,
 			output logic [4:0] 	wr_ptr, rd_ptr,
 			input  logic 		rst, clk, wr, rd			
 );
